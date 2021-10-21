@@ -13,20 +13,21 @@ print("The list is:\n", (list1))
 print("The Smallest Element in this List is : ", min(list1))
 print("The Largest Element in this List is : ", max(list1))
 
-#3.Insert new element into the list 
-list1.append(42069)
+#3.Insert new element into the list
+o = int(input("Enter the element to be appended : "))
+list1.append(o)
 
 print("The appended list is: \n", (list1))
 
 #4.Delete an element from the list
-list1.pop(-1)
+p = int(input("Enter the index number of the element to be popped: "))
+list1.pop(p)
 
 print("The list after deleting an element is: \n", (list1))
 
 #5.Determine if an element is present in the list.
-exist_count = list1.count(4)
+q = int(input("enter an element to check if it is present in the list "))
+
  
-if exist_count > 0:
-    print("Yes, 4 exists in list")
-else:
-    print("No, 4 does not exists in list")
+if (q in list1):
+    print ("Element Exists")
