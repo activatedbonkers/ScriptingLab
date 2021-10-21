@@ -31,3 +31,5 @@ q = int(input("enter an element to check if it is present in the list "))
  
 if (q in list1):
     print ("Element Exists")
+else:
+    print("Element doesn't exist")
